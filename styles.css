@@ -20,7 +20,14 @@ font-size: 2.25rem;
 .color-tomato{
     color: #FF5400;
 }
-
+.btn-primary{
+    background-color: #FF5400;
+    color: white;
+    width: 174px;
+    height: 30px;
+    border-radius: 5px;
+    border: 0;
+}
 
 /* header styles  */
 .nav-container{
@@ -81,13 +88,186 @@ padding-left: 5px;
     height: 30px;
     border-radius: 5px;
 }
-.btn-primary{
-    background-color: #FF5400;
-    color: white;
-    width: 174px;
-    height: 30px;
-    border-radius: 5px;
+
+/* popular tour styles */
+.popular-tour{
+    display: flex;
+    column-gap: 50px;
+    margin: 100px auto;
 }
+.tour-column li, .tour-column .btn-primary{
+    margin: 25px auto;
+}
+
+/* destination styles  */
+.destination-place{
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: space-between;
+    font-size: 1.75rem;
+    font-weight: 800;
+}
+.destination-1{
+    background-image: url('images/Rectangle\ 5.png');
+    width: 100%;
+    height: 300px;
+    border-radius: 15px;
+    background-repeat: no-repeat;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.destination-2{
+    background-image: url('images/Rectangle\ 8.png');
+    width: 100%;
+    height: 300px;
+    border-radius: 15px;
+    background-repeat: no-repeat;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.destination-3{
+    background-image: url('images/Rectangle\ 6.png');
+    width: 374px;
+    height: 286px;
+    border-radius: 15px;
+    background-repeat: no-repeat;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.destination-4{
+    background-image: url('images/Rectangle\ 7.png');
+    width: 474px;
+    height: 286px;
+    border-radius: 15px;
+    background-repeat: no-repeat;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.destination-5{
+    background-image: url('images/Rectangle\ 9.png');
+    width: 274px;
+    height: 286px;
+    border-radius: 15px;
+    background-repeat: no-repeat;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.destination-6{
+    background-image: url('images/Rectangle\ 11.png');
+    width: 473px;
+    height: 300px;
+    border-radius: 15px;
+    background-repeat: no-repeat;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.destination-7{
+    background-image: url('images/Rectangle\ 10.png');
+    width: 673px;
+    height: 300px;
+    border-radius: 15px;
+    background-repeat: no-repeat;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Choose styles */
+.choose{
+    margin: 50px auto;
+}
+.choose-title, .choose-description{
+    text-align: center;
+}
+.choose-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-items: center;
+    gap: 10px;
+}
+.choose img{
+    height: 64px;
+    width: 64px;
+}
+.choose-option1{
+    border-radius: 10px;
+    padding: 5px 10px;
+    background-color: rgba(251, 181, 99, 0.2);
+}
+.choose-option2{
+    border-radius: 10px;
+    padding: 15px 15px;
+    background-color: rgba(41, 206, 246, 0.2);
+}
+.choose-option3{
+    border-radius: 10px;
+    padding: 5px 10px;
+    background-color: rgba(233, 68, 68, 0.2);
+}
+
+/* deals and discount styles  */
+.discount-offer1{
+    width: 529px;
+    height: 379px;
+    position: relative;
+    left: 500px;
+    top: -450px;
+    background-color: rgba(255, 255, 255, 1);
+    padding:10px 0px 0px 50px;
+    border-radius: 10px;
+}
+.discount-offer1 img{
+    width: 100%;
+    height: 500px;
+}
+.discount-offer2{
+    width: 529px;
+    height: 379px;
+    position:relative ;
+    left: 100px;
+    top: -450px;
+    background-color: rgba(255, 255, 255, 1);
+    padding:10px 0px 0px 50px;
+    border-radius: 10px;
+}
+.discount-offer2 img{
+    width: 100%;
+    height: 500px;
+}
+.discount-offer3{
+    width: 529px;
+    height: 379px;
+    position: relative;
+    left: 100px;
+    top: -450px;
+    background-color: rgba(255, 255, 255, 1);
+    padding:10px 0px 0px 50px;
+    border-radius: 10px;
+}
+.discount-offer3 img{
+    width: 100%;
+    height: 500px;
+}
+.discount-limitation{
+    display: flex;
+    gap: 20px;
+
+   
+}
+
 /* news letter styles  */
 .newsletter{
     display: flex;
@@ -178,8 +358,34 @@ footer hr{
 
 
 @media screen and (max-width:660px) {
-    .nav-container,.banner-field{
+    .nav-container,
+    .banner-field,
+    .newsletter,
+    .popular-tour,
+    .destination-place{
         flex-direction:column;
     }
-    
+    .choose-container{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .letter-column2{
+        width: 100%;
+    }
+    .letter-column2 .btn-letter{
+        left: 75px;
+        top: -180px;
+        rotate: -25deg;
+    }
+    .tour-column img,
+    .destination-1,
+    .destination-2,
+    .destination-3,
+    .destination-4,
+    .destination-5,
+    .destination-6,
+    .destination-7,
+    .letter-column1{
+        width: 100%;
+        margin-bottom: 10px;
+    }
 }
